@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_height="62dp" />
+
+    <FrameLayout
+        android:id="@+id/profileImageBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src = "@drawable/baseline_person_24" />
+
+    </FrameLayout>
+
+    <!-- User Name TextView -->
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageBox"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:text="John"
+        android:textSize="20sp" />
+
+    <!-- Name TextView -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:text="username"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:id="@+id/featuresTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_marginTop="16dp"
+        android:text="Features"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!-- Availability Button -->
+    <Button
+        android:id="@+id/availabilityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/featuresTextView"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="@color/background_search_view"
+        android:layout_marginTop="8dp"
+        android:text="Availability" />
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:id="@+id/settingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/availabilityButton"
+        android:layout_marginTop="16dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!-- Availability Button -->
+    <Button
+        android:id="@+id/notificationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="@color/background_search_view"
+        android:layout_below="@id/settingsTextView"
+        android:layout_marginTop="8dp"
+        android:text="Notifications" />
+    <Button
+        android:id="@+id/privacyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="@color/background_search_view"
+        android:layout_below="@id/notificationsButton"
+        android:layout_marginTop="8dp"
+        android:text="Privacy" />
+    <Button
+        android:id="@+id/otherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="@color/background_search_view"
+        android:layout_below="@id/privacyButton"
+        android:layout_marginTop="8dp"
+        android:text="Other" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="70dp"
+        android:backgroundTint="@color/background_search_view"
+        android:textColor="@color/darkred"
+        android:layout_below="@id/otherButton"
+        android:layout_marginTop="8dp"
+        android:text="Log out" />
+
+</RelativeLayout>

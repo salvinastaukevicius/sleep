@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_height="62dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="233dp"
+        android:layout_height="156dp"
+        android:backgroundTint="@color/red"
+        android:padding="10dp"
+        android:text="Nevermind"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="233dp"
+        android:layout_height="156dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="Suggest something else"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImageView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="233dp"
+        android:layout_height="156dp"
+        android:backgroundTint="@color/green"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImageView" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
